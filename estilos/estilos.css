@@ -1,0 +1,57 @@
+@charset "UTF-8";   
+
+@font-face {
+    font-family: 'teste';
+    src: url("/fontes/Sriracha-Regular.ttf")format('truetype');
+}
+
+body{
+   
+}
+
+header {
+    background-color: #E4A392;
+    height: 200px;
+    position: relative;
+    
+}
+    #logo{
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        left:5% ;
+        top:10% ;
+
+        transform: translate(-5%, -8%);
+    }
+
+    nav{
+       position: absolute; 
+       left:20% ;
+       top:45% ;
+       
+    }
+    a{
+       text-decoration: none;
+       margin-right: 10px;
+       color: white;
+       border-radius: 10%;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    a:hover{
+        background-color: #bd1498;
+        padding: 5px;
+        transition: 0.8s;
+    }
+    
+ 
+    
+
+ main{
+    width: 50vwx;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/imagens/karla-santos-fundo01.png');
+
+ }
