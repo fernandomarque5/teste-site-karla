@@ -15,17 +15,19 @@ body{
     header{
         background-color: #E4A392;
         max-width: 99vw;
+        height: auto;
 
     }
 
         #logo{
-        
+            width: 18vw;
+            
         }
 
         nav{
-            position: absolute;
-            top:30vh ;
-            left:20vw ;
+            margin-left: 20vw;
+            padding-bottom: 10px;
+            min-width: 100px;
             
         }
 
