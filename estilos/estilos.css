@@ -23,6 +23,12 @@ body{
 
     }
 
+
+    #caixa{
+        margin-left: 900px;
+        margin-top: 50px;
+    }
+
         #logo{
           max-width: 80px;
           max-height: 100px;
