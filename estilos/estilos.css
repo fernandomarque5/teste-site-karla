@@ -6,70 +6,93 @@
 }
 
 
+
 body{
 
     background-color: rgba(248, 173, 212, 0.363);
-    margin: 0px;
-    max-width: 100vw;
     margin-bottom: 200px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+
+}
 
 
-    }
     header{
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;/*alinhamento do conteudo inteiro, o que guarda os itens, horizontalmente*/
+        align-items:center;/*alinhamento dos itens verticalmente */
+        flex-wrap: wrap;
         background-color: #E4A392;
-        max-width: 99vw;
-        height: 120px;
+        width: 100vw;
+        height: 100px;
         box-shadow: 0px 0px 3px black;
+        position: fixed;
 
-    }
-
-
-    #caixa{
-        margin-left: 70vw;
-        margin-top: 8vh;
     }
 
         #logo{
-          max-width: 80px;
-          max-height: 100px;
-            
-
+          max-width: 60px;
+          max-height: 80px;
           position: absolute;
           top: 1.5%;
           left:15% ;
-          
           transform: translate(-15% -1.5%);
-          
         }
 
         nav{
-            position: absolute;
-            width: 500px;
-            top: 50px;
-            left: 25%;
+            display: flex;/*tipo de dmostragem de tela*/
+            flex-direction: row;/*mostra conteudo em linha ou coluna*/
+            flex-wrap: wrap;/*faz o embrulhamento ficar dentro da div, nav, etc.. qualquer espaço predefinido*/
+            text-align: center;
+            
         }
+
+        @media screen and (min-width:200px) and (max-width:800px){
+            nav{
+                flex-direction: column;
+                
+            }
+            header{
+                align-content:flex-end ;/*igual a 'alinha a direita'*/
+                text-overflow: clip;
+            }
+
+        }
+        #dropdown{
+            display: inline-block;
+            background-color: #E4A392;
+            
+            
+        }
+
+                #conteudo{
+             
+                background-color: #E4A392;
+                
+                }
+
         a{
+            float: left;
             padding: 5px;
             color: rgb(248, 214, 220);
             text-decoration: none;
             font-family: 'karla';
-            font-size: 1.2em;
-            text-align: center;
-            border-radius: 30px;
+            font-size: 1.3em;
+            padding-right: 6px;
+            padding-left: 6px;
+            border-radius: 20px;
+            
         }
         a:hover{
             background-color: #ec8166;
         }
-        form{
-            position: absolute;
-            left: 70%;
-            top: 8%;
-            box-shadow: 0px 0px 2px black   ;
-        }
+        
 
     main{
         background-color: rgba(212, 7, 144, 0.185);
-        max-width: 75vw;
+        max-width: 800px;
         margin: auto;
         padding: 10px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.541);
