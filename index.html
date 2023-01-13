@@ -8,9 +8,10 @@
     <title>Karla Santos | Esteticista</title>
 
     <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/query.css">
 
 </head>
-<body>
+<body onresize="mudoutamanha()">  <!--quando mudar o tamanho da tela-->
     <header>
         
        
@@ -18,15 +19,17 @@
                 <img id="logo-karla" src="imagens/logo-karla.png" alt="logo">
 
                 <img onclick="botao()" id="imgiconemenu" src="imagens/menubar.png" alt="menubar">
-            
-       </div>
-       <nav id="navbar">
-        <div >
-            <a class="barraMenu" href="#">Home</a>
-            <a class="barraMenu" href="#">Agenda</a>
-            <a class="barraMenu" href="#">Sobre</a>
+                
+                    
         </div>
-    </nav>
+        <nav id="navbar">
+            <div >
+                <a class="barraMenu" href="#">Home</a>
+                <a class="barraMenu" href="#">Agenda</a>
+                <a class="barraMenu" href="#">Sobre</a>
+            </div>
+        </nav>
+       
 
     </header>
     <main>
@@ -46,6 +49,14 @@
     </main>
      
    <script>
+    function mudoutamanho(){
+        if (window.innerWidth >= 601){
+            navbar.style.display = 'none'
+        }else{
+            navbar.style.display = 'block'
+        }
+    }
+
     function botao(){
         if (navbar.style.display == 'block'){
             navbar.style.display = 'none'
