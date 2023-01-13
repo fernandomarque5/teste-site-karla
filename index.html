@@ -15,52 +15,43 @@
         
        
         <div id="container">
-             
-                <img id="logo" src="imagens/logo-karla.png" alt="logo">
+                <img id="logo-karla" src="imagens/logo-karla.png" alt="logo">
+
+                <img onclick="botao()" id="imgiconemenu" src="imagens/menubar.png" alt="menubar">
             
-
+       </div>
+       <nav id="navbar">
+        <div >
+            <a class="barraMenu" href="#">Home</a>
+            <a class="barraMenu" href="#">Agenda</a>
+            <a class="barraMenu" href="#">Sobre</a>
         </div>
-        
-        
-        <div id="botao"><button onclick="botao()"><img id="imenu" src="imagens/menubar.png" alt=""></button></div>
-
-        <nav id="navegacao">
-            <ul>
-                <li ><a class="iten-home" href="#">Home</a></li>
-                <li ><a class="iten-agendamentos" href="#">Agendamentos</a></li>
-                <li ><a class="iten-quem-somos" href="#">Quem Somos</a></li>
-            </ul>
-        </nav>
+    </nav>
 
     </header>
     <main>
         <section>
-            <h1>Testando Menu Responsivo</h1>
+            <h1 id="h1_main">Testando Menu Responsivo</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia blanditiis excepturi quam est ipsa perferendis ipsam rerum fugiat dolores nulla expedita dicta laborum natus perspiciatis, eius iure iste! Sunt, maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, error ea magnam quidem repellendus alias quis maiores quos odit repellat! Aperiam ducimus unde asperiores id beatae debitis. Laborum, illo a.</p>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum recusandae, consectetur repellat consequatur vero nemo incidunt illum, facere, quas et perspiciatis ad maiores nulla tenetur nobis corrupti fugit aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam libero, rerum modi consequuntur aliquam amet quas reiciendis numquam exercitationem dolore sed quo ratione illum nobis explicabo eveniet quos architecto?
             </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eius omnis illo molestiae recusandae sint suscipit eaque delectus doloremque perferendis. Possimus quis modi ex aliquam, iste voluptates quibusdam incidunt explicabo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum velit dicta tempora tenetur ratione, mollitia repellendus incidunt dolor quam laboriosam harum, aliquam nemo. Aliquid unde minus qui ab illo?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eius omnis illo molestiae recusandae sint suscipit eaque delectus doloremque perferendis. Possimus quis modi ex aliquam, iste voluptates quibusdam incidunt explicabo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum velit dicta tempora tenetur ratione, mollitia repellendus incidunt dolor quam laboriosam harum, aliquam nemo. Aliquid unde minus qui ab illo?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eius omnis illo molestiae recusandae sint suscipit eaque delectus doloremque perferendis. Possimus quis modi ex aliquam, iste voluptates quibusdam incidunt explicabo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum velit dicta tempora tenetur ratione, mollitia repellendus incidunt dolor quam laboriosam harum, aliquam nemo. Aliquid unde minus qui ab illo?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eius omnis illo molestiae recusandae sint suscipit eaque delectus doloremque perferendis. Possimus quis modi ex aliquam, iste voluptates quibusdam incidunt explicabo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum velit dicta tempora tenetur ratione, mollitia repellendus incidunt dolor quam laboriosam harum, aliquam nemo. Aliquid unde minus qui ab illo?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eius omnis illo molestiae recusandae sint suscipit eaque delectus doloremque perferendis. Possimus quis modi ex aliquam, iste voluptates quibusdam incidunt explicabo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum velit dicta tempora tenetur ratione, mollitia repellendus incidunt dolor quam laboriosam harum, aliquam nemo. Aliquid unde minus qui ab illo?</p>
+
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eius omnis illo molestiae recusandae sint suscipit eaque delectus doloremque perferendis. Possimus quis modi ex aliquam, iste voluptates quibusdam incidunt explicabo!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum velit dicta tempora tenetur ratione, mollitia repellendus incidunt dolor quam laboriosam harum, aliquam nemo. Aliquid unde minus qui ab illo?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eius omnis illo molestiae recusandae sint suscipit eaque delectus doloremque perferendis. Possimus quis modi ex aliquam, iste voluptates quibusdam incidunt explicabo!</p>
+            
         </section>
     </main>
      
    <script>
     function botao(){
-        if (navegacao.style.display == 'block'){
-            navegacao.style.display = 'none'
-        }else
-            {
-            navegacao.style.display = 'block'
-            }
+        if (navbar.style.display == 'block'){
+            navbar.style.display = 'none'
+        }else{
+            navbar.style.display = 'block'
+        }
     }
    </script>
 </body>
