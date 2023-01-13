@@ -1,125 +1,73 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'karla';
-    src: url('../fontes/Sriracha-Regular.ttf') format('truetype');
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
+header{
+   
+    background-color: rgb(238, 154, 154);
+    }   
+
+    #botao{
+        position: relative;
+        text-align: center;
+        
+        margin-bottom:10px ;
+        top: 40%;
+    }
+        #imenu{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            
+        }
 
 
-body{
-
-    background-color: rgba(248, 173, 212, 0.363);
-    margin-bottom: 200px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-
-}
-
-
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content:center ;/*alinhamento do conteudo inteiro, o que guarda os itens, horizontalmente*/
-        align-items:center;/*alinhamento dos itens verticalmente */
-        flex-wrap: wrap;
-        background-color: #E4A392;
-        width: 100vw;
+    #container{
+        position: relative;
         height: 100px;
-        box-shadow: 0px 0px 3px black;
-        position: fixed;
-
+       
+    }
+        img#logo{
+    
+            position: absolute;
+            width: 130px;
+            left: 10%;
+            top: 50%;
+            transform: translate(-10%, -50%);
+            
+           
+            
+        }
+  
+        
+    #navegacao{
+        display: block;
     }
 
-        #logo{
-          max-width: 60px;
-          max-height: 80px;
-          position: absolute;
-          top: 1.5%;
-          left:15% ;
-          transform: translate(-15% -1.5%);
-        }
 
-        nav{
-            display: flex;/*tipo de dmostragem de tela*/
-            flex-direction: row;/*mostra conteudo em linha ou coluna*/
-            flex-wrap: wrap;/*faz o embrulhamento ficar dentro da div, nav, etc.. qualquer espaço predefinido*/
-            text-align: center;
-            
-        }
+    .iten-home, .iten-agendamentos, .iten-quem-somos{
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(109, 6, 28);
+    text-decoration: none;
+    padding: 5px;
+    line-height: 35px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .iten-home:hover{
+    background-color: rgb(223, 106, 141);
+    }
 
-        @media screen and (min-width:200px) and (max-width:800px){
-            nav{
-                flex-direction: column;
-                
-            }
-            header{
-                align-content:flex-end ;/*igual a 'alinha a direita'*/
-                text-overflow: clip;
-            }
-
-        }
-        #dropdown{
-            display: inline-block;
-            background-color: #E4A392;
-            
-            
-        }
-
-                #conteudo{
-             
-                background-color: #E4A392;
-                
-                }
-
-        a{
-            float: left;
-            padding: 5px;
-            color: rgb(248, 214, 220);
-            text-decoration: none;
-            font-family: 'karla';
-            font-size: 1.3em;
-            padding-right: 6px;
-            padding-left: 6px;
-            border-radius: 20px;
-            
-        }
-        a:hover{
-            background-color: #ec8166;
-        }
-        
-
-    main{
-        background-color: rgba(212, 7, 144, 0.185);
-        max-width: 800px;
-        margin: auto;
-        padding: 10px;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.541);
-        height: 2000px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius:15px;
-        }
-
-        h2{
-            margin-top: 0px;
-        }
-
-        #fundo01{
-            
-            height: 60vh;
-            background-image: url('../imagens/karla-santos-fundo01.png');
-            background-repeat: no-repeat;
-            background-position:center center;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        #fundo02{
-            height: 60vh;
-            background-image: url('../imagens/karla-santos-fundo02.png');
-            background-repeat: no-repeat;
-            background-size:cover ;
-            background-attachment: fixed;
-            background-position: center left;
-
-        }
+    .iten-agendamentos:hover{
+    background-color: rgb(223, 106, 141);
+    }
+    .iten-quem-somos:hover{
+    background-color: rgb(223, 106, 141);
+    }
