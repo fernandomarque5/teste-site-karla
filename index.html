@@ -8,33 +8,32 @@
     <title>Karla Santos | Esteticista</title>
 
     <link rel="stylesheet" href="estilos/estilos.css">
-    <link rel="stylesheet" href="estilos/query.css">
+    <link rel="stylesheet" href="estilos/screen320.css">
+    
 
 </head>
-<body onresize="mudoutamanha()">  <!--quando mudar o tamanho da tela-->
+<body >
     <header>
         
-       
-        <div id="container">
-                <img id="logo-karla" src="imagens/logo-karla.png" alt="logo">
+       <img id="logoKarla" src="imagens/logo-karla.png" alt="logo-karala">
+       <img onclick="iconeMenuIndor()" id="iconeMenu" src="imagens/menubar.png" alt="">
 
-                <img onclick="botao()" id="imgiconemenu" src="imagens/menubar.png" alt="menubar">
-                
-                    
-        </div>
-        <nav id="navbar">
-            <div >
-                <a class="barraMenu" href="#">Home</a>
-                <a class="barraMenu" href="#">Agenda</a>
-                <a class="barraMenu" href="#">Sobre</a>
-            </div>
+       <nav id="navIndor">
+        <a id="navAgendamentosIndor" href="#">Agendamentos</a>
+        <a id="navProcedimentosIndor" href="#">Procedimentos</a>
         </nav>
-       
 
     </header>
+    <nav id="navOutdor">
+        <a id="navAgendamentosOutdor" href="#">Agendamentos</a>
+        <a id="navProcedimentosOutdor" href="#">Procedimentos</a>
+    </nav>
+
+
+
     <main>
         <section>
-            <h1 id="h1_main">Testando Menu Responsivo</h1>
+            <h1 >Quem Somos ?</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia blanditiis excepturi quam est ipsa perferendis ipsam rerum fugiat dolores nulla expedita dicta laborum natus perspiciatis, eius iure iste! Sunt, maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, error ea magnam quidem repellendus alias quis maiores quos odit repellat! Aperiam ducimus unde asperiores id beatae debitis. Laborum, illo a.</p>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum recusandae, consectetur repellat consequatur vero nemo incidunt illum, facere, quas et perspiciatis ad maiores nulla tenetur nobis corrupti fugit aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam libero, rerum modi consequuntur aliquam amet quas reiciendis numquam exercitationem dolore sed quo ratione illum nobis explicabo eveniet quos architecto?
@@ -49,21 +48,14 @@
     </main>
      
    <script>
-    function mudoutamanho(){
-        if (window.innerWidth >= 601){
-            navbar.style.display = 'none'
-        }else{
-            navbar.style.display = 'block'
+    function iconeMenuIndor(){
+        if (navOutdor.style.display == 'block')
+            navOutdor.style.display = 'none'
+        else
+            navOutdor.style.display = 'block'
         }
-    }
 
-    function botao(){
-        if (navbar.style.display == 'block'){
-            navbar.style.display = 'none'
-        }else{
-            navbar.style.display = 'block'
-        }
-    }
+
    </script>
 </body>
 </html>
