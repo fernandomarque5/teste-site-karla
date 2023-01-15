@@ -54,6 +54,7 @@ header{
                 }
 
 #navOutdor{
+    display: none;
 }
                 #navAgendamentosOutdor{
                     text-decoration: none;
