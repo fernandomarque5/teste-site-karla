@@ -1,25 +1,21 @@
 @charset "UTF-8";
 
 
-@media screen and (min-width:431px) and (max-width:650px){
+@media screen and (min-width:1440px){
     header{
-        height: 180px;
+        height: 140px;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.603);
         position: sticky;
-        top: -1px;
-       
-        
+        top: -1px; 
     }
 
         #logoGl{
         position: absolute;
         width: 180px;
-        height: 100px;
-        left: 50%;
-        top: 17%;
-        transform: translate(-50%, -17%);
-        
-    
+        height: 110x;
+        left: 10%;
+        top: 30%;
+        transform: translate(-10%, -30%);
     }
 
         #iconeMenu{
@@ -30,44 +26,50 @@
         top: 50%;
         left: 89%;
         transform: translate(-89%, -50%);
-        
         }
 
         #navIndor{
             display: block;
-            width: 92vw;
-            position:absolute;
-            top: 150px;
+            position:relative;
+            width: 870px;
+            height: 120px;
+            top: 70px;
+            left: 55%;
             text-align: center;
             padding: 10px;
-           
             
             
         }
                      #navAgendamentosIndor{
-                        
+                        position: absolute;
+                        left: 5%;
+                        top: 50%;
+                        transform: translate(-5%, -50%);
                          text-decoration: none;
-                         font-size: 25px;
+                         font-size: 2.1em;
                          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                          color: rgb(207, 72, 72);
                          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
                          border-radius: 20px;
-                        
-                         
-                         
+                         margin-right: 30px;    
                      }
                      #navProcedimentosIndor{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
                          text-decoration: none;
-                         font-size: 25px;
+                         font-size: 2.1em;
                          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                          color: rgb(207, 72, 72);
                          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
                          border-radius: 20px;
+                         margin-left: 30px;
                          
                      }
                      #navProcedimentosIndor:hover, #navAgendamentosIndor:hover{
-                        background-color: rgb(252, 222, 232);
-                        color: rgb(207, 72, 72);
+                         background-color: rgb(252, 222, 232);
+                         color: rgb(207, 72, 72);
                      }
     #navOutdor{
     display: none;
