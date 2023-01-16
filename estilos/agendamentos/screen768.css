@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 
-@media screen and (min-width:1024px) and (max-width:1439px){
+@media screen and (min-width:768px) and (max-width:1023px){
     header{
-        height: 140px;
+        height: 120px;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.603);
         position: sticky;
         top: -1px; 
@@ -31,36 +31,35 @@
         #navIndor{
             display: block;
             position:relative;
-            width: 670px;
-            height: 120px;
+            width: 370px;
+            height: 200px;
             top: 70px;
             left: 60%;
             text-align: center;
             padding: 10px;
-            
         }
                      #navAgendamentosIndor{
                         position: absolute;
-                        left: 5%;
-                        top: 50%;
-                        transform: translate(-5%, -50%);
+                        left: -2%;
+                        top: 40%;
+                        transform: translate(-2%, -40%);
                          text-decoration: none;
-                         font-size: 1.9em;
+                         font-size: 1.7em;
                          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                         color: rgb(207, 72, 72);
+                         color: rgb(250, 248, 248);
                          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
                          border-radius: 20px;
                          margin-right: 30px;    
                      }
                      #navProcedimentosIndor{
                         position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
+                        left: 89%;
+                        top: 40%;
+                        transform: translate(-89%, -40%);
                          text-decoration: none;
-                         font-size: 1.9em;
+                         font-size: 1.7em;
                          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                         color: rgb(207, 72, 72);
+                         color: rgb(250, 248, 248);
                          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
                          border-radius: 20px;
                          margin-left: 30px;
@@ -73,27 +72,26 @@
     #navOutdor{
     display: none;
     }
+    main{
+        width: 50vw;
+        margin: auto;
+        background-color:rgb(235, 104, 104);
+    }
+    h1{
+        text-align: center;
+    }
+    form{
+        position: relative;
+    }
+    #idbotaoenviar{
+        position: absolute;
+        left: 40%;
+        top: 97%;
+    }
+    #idreset{
+        position: absolute;
+        left: 80%;
+        top: 97%;
+    }
             
-    
-
-
-            main{
-                width: 70vw;
-                margin: auto;
-                margin-top: 20px;
-                background-color: rgb(252, 203, 203);
-                border-radius: 15px;
-                
-                }
-                h1{
-                    text-align: center;
-                    margin-top: 0px;
-                }
-                p{
-                    text-align: justify;
-                    text-indent: 30px;
-                    line-height: 35px;
-                    font-size: 1.4em;
-                    
-                }
-            }
+ }
