@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamentos</title>
-
+    
     <link rel="stylesheet" href="estilos/agendamentos/screen320.css">
     <link rel="stylesheet" href="estilos/agendamentos/screen431.css">
     <link rel="stylesheet" href="estilos/agendamentos/screen651.css">
@@ -18,50 +18,52 @@
         
         <a href="index.html"><img id="logoGl" src="imagens/logo2-site-gl.png" alt="logo-karala"> </a>
         <img onclick="iconeMenuIndor()"  id="iconeMenu" src="imagens/menubar.png" alt="">
+        <img onclick="iconeMenuOutdor()"  id="iconeMenu2" src="imagens/menubar.png" alt="">
  
         <nav id="navIndor">
-         <a id="navAgendamentosIndor" href="#">Agendamentos</a>
+         <a id="navAgendamentosIndor" href="index.html">Home</a>
          <a id="navProcedimentosIndor" href="#">Procedimentos</a>
          </nav>
  
      </header>
      <nav id="navOutdor">
-         <a id="navAgendamentosOutdor" href="#">Agendamentos</a>
+         <a id="navAgendamentosOutdor" href="index.html">Home</a>
          <a id="navProcedimentosOutdor" href="#">Procedimentos</a>
      </nav>
-        <h1>Preencha o formulário com seus dados</h1>
+        <h1>Preencha o formulário</h1>
      <main>
         
         <form  method="get" > <!--tag action, serve para dizer para onde os dados serão enviados, post serve para nao mostrar as informações na url-->
             <br>
-            <p>
-                <label for="idnome">Nome:</label> 
-                <input type="text" name="nome" id="idnome" placeholder="Digite aqui seu nome" required></p>
+           
+                <label id="idnomelabel" for="idnome">Nome:</label> 
+                <input type="text" name="nome" id="idnome" placeholder="Seu nome" required>
                 <br>
-            <p><label for="idsobrenome">Sobrenome:</label> 
-                <input type="text" name="sobrenome" id="idsobrenome" placeholder="Digite aqui seu sobrenome" required></p>
+            <p><label id="idsobrenomelabel" for="idsobrenome">Sobrenome:</label> 
+                <input type="text" name="sobrenome" id="idsobrenome" placeholder="Seu sobrenome" required></p>
                 <br>
-            <p><label for="ididade">idade: </label>
+                
+            <p><label id="ididadelabel" for="ididade">Idade: </label>
                 <input type="number" name="idade" id="ididade" style="width: 60px;" placeholder="0 a 99" required min="0" max="99"></p>  
             <br>        
        
-            <h3>Qual tipo de procedimento deseja fazer?</h3>
+            <h3 id="h31">Qual procedimento deseja fazer?</h3>
         
             <br>
-            <p><label for="idfacial">Facial:</label>
+            <p><label id="idfaciallabel" for="idfacial">Facial:</label>
                  <input type="text" name="facial" id="idfacial" placeholder="Selecione" minlength="3" ></p>
                  <br>
-            <p><label for="idcorporal">Corporal:</label>
+            <p><label id="idcorporallabel" for="idcorporal">Corporal:</label>
                 <input type="text" name="corporal" id="idcorporal" placeholder="Selecione" minlength="2" ></p>
             <br>
-            <h3>Escolha a melhor Data</h3>
+            <h3 id="h32">Escolha a melhor Data</h3>
              <br>
-             <p><label for="iddata">Data:</label>
+             <p><label id="iddatalabel" for="iddata">Data:</label>
                 <input type="date" name="data" id="iddata" required>
                 <br>
              </p>
              <br>
-             <p><label for="idhorarioagendamento">Horário:</label>
+             <p><label id="idhorarioagendamentolabel" for="idhorarioagendamento">Horário:</label>
                 <input type="time" id="idhorarioagendamento">
              </p>
              <br>
@@ -69,12 +71,14 @@
                 <input type="reset" id="idreset" value="Limpar">
             </form>
 
-
-
-
-
      </main>
-
-
+     <script >
+        function iconeMenuOutdor(){
+            if (navOutdor.style.display == 'none')
+                navOutdor.style.display = 'block'
+            else
+                navOutdor.style.display = 'none'
+            }
+    </script>
 </body>
 </html>
